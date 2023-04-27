@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            background-color: silver;
+        }
+        h1 {
+            text-align: center;
+            background-color: grey;
+            padding: 20px;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 30px;
+            margin: 0;
+        }
+
+        .tabs {
+            list-style: none;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: sans-serif
+        }
+
+        .tabs li {
+            display: inline-block;
+        }
+
+        .tabs input[type="radio"] {
+            display: none;
+        }
+
+        .tabs label {
+            display: block;
+            cursor: pointer;
+            padding: 10px 15px;
+            border: 2px solid black;
+            border-bottom: 0;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .tabs .tab-panel {
+            display: none;
+            overflow: hidden;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            border-top: 2px solid black;
+        }
+
+        .tabs [id^="tab"]:checked+label {
+            background-color: black;
+            color: #fff;
+        }
+
+        .tabs [id^="tab"]:checked~[id^="tab-panel"] {
+            display: block;
+        }
+
+        .move {
+            padding: 100px;
+        }
+    </style>
+
+<body>
+
+    <ul class="tabs">
+        <li>
+            <input id="tab3" type="radio" name="tabs" />
+            <label for="tab3">HOME</label>
+            <div id="tab-panel3" class="tab-panel">
+            </div>
+        </li>
+        <li>
+            <input id="tab1" type="radio" name="tabs" checked />
+            <label for="tab1">HTML</label>
+            <div id="tab-panel1" class="tab-panel">
+                <table class="move">
+                    <tr>
+                        <th>HTML</th>
+                        <th>Explanation</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Attributes</td>
+                        <td>HTML attributes provide additional information about HTML elements.</td>
+                        <td>
+                            < a href="https://www.w3schools.com">Visit W3Schools< /a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Elements</td>
+                        <td>An HTML element is defined by a start tag, some content, and an end tag.</td>
+                        <td>
+                            < p>My first paragraph.< /p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+        <li>
+            <input id="tab2" type="radio" name="tabs" />
+            <label for="tab2">CSS</label>
+            <div id="tab-panel2" class="tab-panel">
+                <table class="move">
+                    <tr>
+                        <th>CSS</th>
+                        <th>Explanation</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Margins</td>
+                        <td>Margins are used to create space around elements, outside of any defined borders.</td>
+                        <td>p {
+                            margin-top: 100px;
+                            margin-bottom: 100px;
+                            margin-right: 150px;
+                            margin-left: 80px;
+                            }</td>
+                    </tr>
+                    <tr>
+                        <td>Text Indentation</td>
+                        <td>The text-indent property is used to specify the indentation of the first line of a text:
+                        </td>
+                        <td>p {
+                            text-indent: 50px;
+                            }</td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+        <li>
+            <input id="tab4" type="radio" name="tabs" />
+            <label for="tab4">CONTACT</label>
+            <div id="tab-panel4" class="tab-panel">
+                <h1>Contact Details</h1>
+                <p>Email Address: xxxxxx@gmail.com</p>
+                <p>Contact Number: +44XXXXXXXX</p>
+            </div>
+        </li>
+    </ul>
+
+    <h1>HTML and CSS cheatsheet</h1>
+</body>
+
+</html>
