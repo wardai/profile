@@ -2,16 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="main.css">
     <style>
-        body{
-            background-color: silver;
-        }
-        h1 {
-            text-align: center;
-            background-color: grey;
-            padding: 20px;
-
-        }
 
         table,
         th,
@@ -71,13 +63,15 @@
     </style>
 
 <body>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cheatsheet.html">Cheatsheet</a></li>
+        </ul>
+    </div>
     <ul class="tabs">
-        <li>
-            <input id="tab3" type="radio" name="tabs" />
-            <label for="tab3">HOME</label>
-            <div id="tab-panel3" class="tab-panel">
-            </div>
-        </li>
+        
         <li>
             <input id="tab1" type="radio" name="tabs" checked />
             <label for="tab1">HTML</label>
@@ -136,15 +130,7 @@
                 </table>
             </div>
         </li>
-        <li>
-            <input id="tab4" type="radio" name="tabs" />
-            <label for="tab4">CONTACT</label>
-            <div id="tab-panel4" class="tab-panel">
-                <p>Email Address: xxxxxx@gmail.com</p>
-                <p>Contact Number: +44XXXXXXXX</p>
-             <p><a href="https://github.com/wardai">My Github</a></p> 
-            </div>
-        </li>
+       
         <li>
             <input id="tab5" type="radio" name="tabs" />
             <label for="tab5">COMMAND</label>
@@ -170,8 +156,6 @@
             </div>
         </li>
     </ul>
-
-    <h1>CHEATSHEET</h1>
 </body>
 
 </html>
