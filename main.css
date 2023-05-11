@@ -29,6 +29,6 @@ li a {
     width: 100px;
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: auto;
     border-style: groove;
 }
