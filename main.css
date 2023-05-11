@@ -28,5 +28,6 @@ li a {
 .profilepic {
     width: 100px;
     display: block;
-    
+    margin: auto;
+
 }
