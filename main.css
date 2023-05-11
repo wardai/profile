@@ -2,10 +2,6 @@ body {
     background-color: rgb(219, 219, 219);
 }
 
-.tabTitle {
-    color: beige;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -20,4 +16,8 @@ li a {
     text-align: center;
     padding: 20px 16px;
     border: 1px solid #000000;
+}
+.contact {
+    border-style: double;
+
 }
