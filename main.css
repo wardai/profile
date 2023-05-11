@@ -20,6 +20,7 @@ li a {
 .contact {
     border-style: double;
     padding: 20px;
-    border-spacing: 20px;
+    border-spacing: 100px;
+    text-align: center;
 
 }
