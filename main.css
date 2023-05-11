@@ -24,5 +24,6 @@ li a {
 
 }
 .profilepic {
-    display: block;
+    align-items: center;
+    width: 100px;
 }
