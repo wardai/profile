@@ -2,6 +2,10 @@ body {
     background-color: rgb(219, 219, 219);
 }
 
+.tabTitle {
+    color: beige;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
