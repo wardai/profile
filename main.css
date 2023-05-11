@@ -18,7 +18,7 @@ li a {
     border: 1px solid #000000;
 }
 .contact {
-    border-style: double;
+    border-style: groove;
     padding: 20px;
     text-align: center;
 
